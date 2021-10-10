@@ -11,7 +11,8 @@
               <div class="contenedor-tabla pull-right">
                 <div class="contenedor-tr">
                   <a href="index.php" class="table-cell-td">Inicio</a>
-                <a href="/configAdmin.php?view=categorylist"  class="table-cell-td">Categorias</a>
+                  <a href="/configAdmin.php?view=categorylist"  class="table-cell-td">Categorias</a>
+                  <a href="/configAdmin.php?view=productlist"  class="table-cell-td">Productos</a>
                   <?php
                       if(!$_SESSION['nombreAdmin']==""){
                           echo ' 

@@ -46,12 +46,6 @@
                             </div>
                             <div class="col-xs-12 col-sm-6 col-md-4">
                               <div class="form-group label-floating">
-                                <label class="control-label">Modelo</label>
-                                <input type="text" class="form-control" value="<?php echo $prod['Modelo']; ?>" required name="prod-model">
-                              </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-4">
-                              <div class="form-group label-floating">
                                 <label class="control-label">Precio</label>
                                 <input type="text" class="form-control" value="<?php echo $prod['Precio']; ?>" required maxlength="20" pattern="[0-9.]{1,20}" name="prod-price">
                               </div>
@@ -96,9 +90,9 @@
                                         $proveedor=ejecutarSQL::consultar("SELECT * FROM proveedor");
                                         while($prov=mysqli_fetch_array($proveedor, MYSQLI_ASSOC)){
                                         	if($prod['NITProveedor']==$prov['NITProveedor']){
-                                        		echo '<option selected="" value="'.$prov['NITProveedor'].'">'.$prov['NombreProveedor'].' (Actual)</option>';
+                                        		echo '<option selected="" value="'.$prov['RUCProveedor'].'">'.$prov['NombreProveedor'].' (Actual)</option>';
                                         	}else{
-                                            	echo '<option value="'.$prov['NITProveedor'].'">'.$prov['NombreProveedor'].'</option>';	
+                                            	echo '<option value="'.$prov['RUCProveedor'].'">'.$prov['NombreProveedor'].'</option>';	
                                         	}
                                         }
                                     ?>

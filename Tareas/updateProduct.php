@@ -48,7 +48,9 @@ if($imgName!=""){
   }
 }
 
-if(consultasSQL::UpdateSQL("producto", "NombreProd='$nameProdUp',CodigoCat='$catProdUp',Precio='$priceProdUp',Descuento='$descProdUp',Marca='$marcaProdUp',Stock='$stockProdUp',RUCProveedor='$proveProdUp',Estado='$EstadoProdUp'", "CodigoProd='$codeOldProdUp'")){
+$sql = "NombreProd='$nameProdUp',CodigoCat='$catProdUp',Precio='$priceProdUp',Descuento='$descProdUp',Marca='$marcaProdUp',Stock='$stockProdUp',RUCProveedor='$proveProdUp',Estado='$EstadoProdUp'";
+
+if(consultasSQL::UpdateSQL("producto", $sql, "CodigoProd='$codeOldProdUp'")){
    echo '<script>
     swal({
       title: "Producto actualizado",

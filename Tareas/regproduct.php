@@ -43,7 +43,6 @@ include '../MySQL/consulSQL.php';
 					if(move_uploaded_file($_FILES['img']['tmp_name'],"../assets/img-products/".$imgFinalName)){
 						$SQL = "INSERT INTO producto (CodigoProd, NombreProd, CodigoCat, Precio, Descuento, Marca, Stock, RUCProveedor, Nombre, Estado, Imagen) VALUES ('$codeProd','$nameProd','$cateProd','$priceProd', 
 						'$descProd','$marcaProd','$stockProd','$codePProd','$adminProd','$estadoProd', '$imgFinalName')";
-						echo $SQL;
 						if(mysqli_query(ejecutarSQL::conectar(), $SQL))
 						
 						{

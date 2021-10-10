@@ -31,7 +31,8 @@ class consultasSQL{
         return $consul;
     }
     public static function UpdateSQL($tabla, $campos, $condicion) {
-        if (!$consul = ejecutarSQL::consultar("UPDATE $tabla SET $campos WHERE $condicion")) {
+        $sql = "UPDATE $tabla SET $campos WHERE $condicion";
+        if (!$consul = ejecutarSQL::consultar($sql)) {
             die("Ha ocurrido un error al actualizar los datos en la tabla");
         }
         return $consul;

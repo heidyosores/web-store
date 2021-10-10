@@ -18,19 +18,19 @@
           </div>
           <!--====  Nav Tabs  ====-->
           <ul class="nav nav-tabs nav-justified" style="margin-bottom: 15px;">
-            <!--<li>
+            <li>
               <a href="configAdmin.php?view=product">
-                <i class="fa fa-cubes" aria-hidden="true"></i> &nbsp; Productos
+                <i class="fa fa-cubes" aria-hidden="true"></i> Nuevo producto
               </a>
             </li>
-            <li>
-              <a href="configAdmin.php?view=provider">
-                <i class="fa fa-truck" aria-hidden="true"></i> &nbsp; Proveedores
-              </a>
-            </li>-->
+            <!--<li>-->
+            <!--  <a href="configAdmin.php?view=provider">-->
+            <!--    <i class="fa fa-truck" aria-hidden="true"></i> &nbsp; Proveedores-->
+            <!--  </a>-->
+            <!--</li>-->
             <li>
               <a href="configAdmin.php?view=category">
-                <i class="fa fa-shopping-basket" aria-hidden="true"></i> &nbsp; Nueva categoría
+                <i class="fa fa-shopping-basket" aria-hidden="true"></i> Nueva categoría
               </a>
             </li>
             <!--<li>
